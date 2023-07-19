@@ -18,3 +18,7 @@ html, body {
 	inset: 0;
 	background-size: cover;
 }
+
+.slider__item {
+	overflow: hidden;
+}
