@@ -9,6 +9,10 @@ html, body {
 	height: 100%;
 }
 
+:root {
+	--transition: 1.75s cubic-bezier(.2, .6, 0, 1);
+}
+
 .slider {
 	height: 100%;
 }
@@ -18,6 +22,7 @@ html, body {
 	inset: 0;
 	background-size: cover;
 	will-change: transform;
+	transition: var(--transition)!important;
 }
 
 .slider__layer::before {
@@ -37,4 +42,5 @@ html, body {
 .slider__wrapper {
 	will-change: transform;
 	transform-style: preserve-3d;
+	transition: var(--transition)!important;
 }
